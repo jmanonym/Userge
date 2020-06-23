@@ -84,7 +84,7 @@ async def weather_get(message: Message):
     result = json.loads(request.text)
 
     if request.status_code != 200:
-        await message.edit(r"`Invalid country.. ¯\_(ツ)_/¯`", del_in=0)
+        await message.edit(r"`Mavjud bolmagan joylashuv.. ¯\_(ツ)_/¯`", del_in=0)
         return
 
     cityname = result['name']
